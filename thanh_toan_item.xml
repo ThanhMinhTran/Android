@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemfooddetail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/foodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thịt bò xào cay tứ xuyên"
+        android:textSize="21dp"
+        />
+        <TextView
+            android:id="@+id/foodquantity"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng - 10"
+            android:textSize="21dp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

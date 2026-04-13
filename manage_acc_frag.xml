@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="50dp">
+        <ImageView
+            android:id="@+id/imgAnhDaiDien"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/txtUsernameQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Username"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtUsernameQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_background"
+        android:hint=""
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/txtEmailQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtEmailQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_background"
+        android:hint=""
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/txtAddressQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Địa chỉ"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtAddressQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_background"
+        android:hint=""
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/txtPhoneQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Phone"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPhoneQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_background"
+        android:hint=""
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Avatar (Optional) -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChangeAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Thêm avatar" />
+
+        <TextView
+            android:id="@+id/txtImgAvatarQL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chưa có ảnh" />
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF5722"
+        android:text="Lưu"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

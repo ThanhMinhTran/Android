@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.ConfirmPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Tổng tiền -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết đơn hàng"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tongtien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200.000 VND"
+                android:textSize="23dp"
+                android:textColor="#F44336"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+
+        <!-- Danh sách món -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingHorizontal="12dp"
+            android:id="@+id/listMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Thông tin người nhận -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lfullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Họ và tên">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Nguyên Văn Mạnh" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Số điện thoại">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:text="0942549465" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/laddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Địa chỉ">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Số 96 Định Công Hoàng Mai Hà Nội" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Ô mã giảm giá -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ldiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Mã giảm giá">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/btndiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:textColor="#000000"
+                android.backgroundTint="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Ghi chú -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lnote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Ghi chú">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Không có ghi chú gì khác" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Ô phương thức thanh toán -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lpttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Phương thức thanh toán">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/btnpttt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:backgroundTint="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Nút hành động -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnhuy"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:background="@drawable/btnhuy"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/btnpay"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnpay"
+                android:text="Thanh toán" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
