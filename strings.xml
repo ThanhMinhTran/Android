@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Food is Life</string>
+    <string name="food_is_life">Food is Life</string>
+    <string name="email_phone">Email hoặc Số điện thoại</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="forget_pass">Quên mật khẩu?</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="no_acc">Bạn chưa có tài khoản?</string>
+    <string name="dang_ky">Đăng ký</string>
+    <string name="nameapp">Food is Life</string>
+    <string name="email_phone_DK">Email hoặc Số điện thoại</string>
+    <string name="pwDK">Mật khẩu</string>
+    <string name="pw_nhaplai">Nhập lại mật khẩu</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="yes_acc">Bạn đã có tài khoản?</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="manage_acc">Quản lý tài khoản</string>
+    <string name="change_pw">Đổi mật khẩu</string>
+    <string name="history">Lịch sử mua</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="navigation_drawer_open">Mở menu</string>
+    <string name="navigation_drawer_close">Đóng menu</string>
+    <string name="thanh">Trần Minh Thành</string>
+    <string name="thanh_gmail_com">thanh@gmail.com</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="decrease">-</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Quản lý tài khoản</string>
+    <string name="home">Trang chủ</string>
+    <string name="xoa">Xóa</string>
+    <string name="chitietdonhang">Chi tiết đơn hàng</string>
+    <string name="chitietmonan">• Gà rán Texas (200$) - Số lượng: 2</string>
+    <string name="btn_confirm">Xác Nhận</string>
+
+</resources>
